@@ -1,34 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Login from './components/Login';
+import Robots from './components/Robots';
 
 function App() {
   return (
-    <div>
-      {/* Barra de navegación */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div className="container">
-          <a className="navbar-brand" href="#">Mi App</a>
-        </div>
-      </nav>
-
-      {/* Contenido principal */}
-      <div className="container mt-4">
-        <h1 className="text-center">¡Bienvenido a mi App con Bootstrap!</h1>
-
-        {/* Tarjeta con Bootstrap */}
-        <div className="card mt-4">
-          <div className="card-body">
-            <h5 className="card-title">Tarjeta de Ejemplo</h5>
-            <p className="card-text">
-              Esta es una tarjeta de prueba con Bootstrap en React.
-            </p>
-            <button className="btn btn-primary">Haz clic aquí</button>
-          </div>
-        </div>
+    <Router>
+      <div className="container">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/robots" element={<Robots />} />
+        </Routes>
+        <footer className="mt-4 text-center">
+          <p>Contact us: +57 3102105253 - info@robot-lovers.com - @robot-lovers</p>
+        </footer>
       </div>
-    </div>
+    </Router>
   );
 }
 

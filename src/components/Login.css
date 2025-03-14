@@ -1,0 +1,23 @@
+.custom-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+  }
+  
+  .btn-primary.custom-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-danger.custom-btn {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .is-invalid {
+    border-color: #dc3545;
+  }
+  
+  .alert-danger {
+    margin-top: 1rem;
+  }
