@@ -1,23 +1,36 @@
+.custom-input {
+  background-color: #ddd;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+}
+.custom-input:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: #ddd;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.custom-input.is-invalid {
+  border: 1px solid #dc3545 !important;
+}
+
 .custom-btn {
-    width: 150px;
-    height: 50px;
-    font-size: 18px;
-  }
-  
-  .btn-primary.custom-btn {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .btn-danger.custom-btn {
-    background-color: #dc3545;
-    border-color: #dc3545;
-  }
-  
-  .is-invalid {
-    border-color: #dc3545;
-  }
-  
-  .alert-danger {
-    margin-top: 1rem;
-  }
+  width: 46%;
+  height: 45px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+}
+
+.blue-btn {
+  background-color: #003b93;
+  color: white;
+}
+
+.red-btn {
+  background-color: #e75d5d;
+  color: black;
+}
